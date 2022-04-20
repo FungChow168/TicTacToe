@@ -34,6 +34,7 @@ public class Tictactoe {
         String input;
         Scanner scanner = new Scanner(System.in);
         int index = MINIMUMBOXNUM;
+        printGameBoard();
         while (index <= MAXIMUMBOXNUM && !gameEnd) {
             do {
                 System.out.println("option: " + availableBox);
