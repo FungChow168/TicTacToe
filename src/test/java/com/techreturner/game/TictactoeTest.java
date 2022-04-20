@@ -1,8 +1,13 @@
 package com.techreturner.game;
 
 import org.junit.Test;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 public class TictactoeTest {
 
@@ -60,5 +65,11 @@ public class TictactoeTest {
     // get user input alternatively, check the board display properly
 
     // check three in a row
-
+    @Test
+    public void checkWinnerTest(){
+        assertFalse("not yet", game.isWinner(new ArrayList<Integer>(Arrays.asList(1,2,5,7)),
+                                                     new Integer[]{1,2,3}));
+        assertTrue("not yet", game.isWinner(new ArrayList<Integer>(Arrays.asList(1,2,5,7,3)),
+                                                    new Integer[]{1,2,3}));
+    }
 }
