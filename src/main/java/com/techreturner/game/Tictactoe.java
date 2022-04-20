@@ -144,21 +144,6 @@ public class Tictactoe {
 
     public static void main(String[] args) {
         Tictactoe a = new Tictactoe();
-/*
-        a.addItemToBoard(1, "X");
-        a.addItemToBoard(3, "O");
-        a.addItemToBoard(9, "X");
-        a.addItemToBoard(9, "O");
-        a.printAvailableBox();
-        a.printGameBoard();
-//        Integer [] b = {1,2,3};
-//        System.out.println(a.isWinner(new ArrayList<Integer>(Arrays.asList(1,2,5,7,3)),
-//                                      new Integer[]{1,2,3}));
-//        System.out.println((char)(65+0));
-        System.out.println(a.isValidInput("1"));
-
-
- */
         a.play();
     }
 
